@@ -4,7 +4,7 @@
   "description": "Simple React loading components",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint '**/*.js'"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,29 @@
   "bugs": {
     "url": "https://github.com/claeusdev/react-loaders/issues"
   },
-  "homepage": "https://github.com/claeusdev/react-loaders#readme"
+  "homepage": "https://github.com/claeusdev/react-loaders#readme",
+  "devDependencies": {
+    "eslint": "^7.2.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-standard": "^4.0.1",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.10",
+    "prettier-eslint": "^11.0.0",
+    "prettier-eslint-cli": "^5.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "yarn lint",
+      "git add"
+    ]
+  }
 }
