@@ -4,9 +4,9 @@
   "description": "Simple React loading components",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint '**/*.js'",
+    "lint": "eslint '**/*.js' --fix",
     "prebuild": "rimraf dist",
-    "build": "rollup -c"
+    "build": "rollup -c "
   },
   "repository": {
     "type": "git",
@@ -41,7 +41,7 @@
     }
   },
   "lint-staged": {
-    "*.js": [
+    "src/*.js": [
       "yarn lint"
     ]
   }
