@@ -4,7 +4,9 @@
   "description": "Simple React loading components",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint '**/*.js'"
+    "lint": "eslint '**/*.js'",
+    "prebuild": "rimraf dist",
+    "build": "rollup -c"
   },
   "repository": {
     "type": "git",
@@ -28,7 +30,10 @@
     "husky": "^4.2.5",
     "lint-staged": "^10.2.10",
     "prettier-eslint": "^11.0.0",
-    "prettier-eslint-cli": "^5.0.0"
+    "prettier-eslint-cli": "^5.0.0",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.16.1",
+    "rollup-plugin-node-resolve": "^5.2.0"
   },
   "husky": {
     "hooks": {
