@@ -2,7 +2,9 @@
   "name": "react-loaders",
   "version": "1.0.0",
   "description": "Simple React loading components",
-  "main": "index.js",
+  "main": "dist/bundle.cjs.js",
+  "module": "dist/bundle.esm.js",
+  "sideEffects": false,
   "scripts": {
     "lint": "eslint '**/*.js' --fix",
     "prebuild": "rimraf dist",
