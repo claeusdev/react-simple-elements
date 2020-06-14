@@ -1,1 +1,1 @@
-console.log('hello' + 'my')
+export * from './Ring'
