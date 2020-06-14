@@ -1,8 +1,1 @@
-(function (factory) {
-	typeof define === 'function' && define.amd ? define(factory) :
-	factory();
-}((function () { 'use strict';
-
-	console.log('hello' + 'my');
-
-})));
+!function(e,t){"object"==typeof exports&&"undefined"!=typeof module?module.exports=t(require("react")):"function"==typeof define&&define.amd?define(["react"],t):(e=e||self).ReactCssLoaders=t(e.React)}(this,(function(e){"use strict";return(e=e&&Object.prototype.hasOwnProperty.call(e,"default")?e.default:e).createElement("h1",null,"Spinning")}));
