@@ -29,7 +29,7 @@
   "bugs": {
     "url": "https://github.com/claeusdev/react-loaders/issues"
   },
-  "homepage": "https://github.com/claeusdev/react-loaders#readme",
+  "homepage": "https://nanamanu.xyz/react-loaders/",
   "devDependencies": {
     "@babel/cli": "^7.10.1",
     "@babel/core": "^7.10.3",
