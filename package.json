@@ -7,6 +7,10 @@
   "sideEffects": false,
   "scripts": {
     "lint": "eslint '**/*.js' --fix",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:stagged": "jest --findRelatedTests",
     "prebuild": "rimraf dist",
     "build": "rollup -c ",
     "storybook": "start-storybook",
@@ -35,21 +39,25 @@
     "@storybook/addon-options": "^5.3.19",
     "@storybook/addons": "^5.3.19",
     "@storybook/react": "^5.3.19",
+    "babel-jest": "^26.0.1",
     "babel-loader": "^8.1.0",
     "eslint": "^7.2.0",
     "eslint-config-standard": "^14.1.1",
     "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-jest": "^23.13.2",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-standard": "^4.0.1",
     "husky": "^4.2.5",
+    "jest": "^26.0.1",
     "lint-staged": "^10.2.10",
     "prettier-eslint": "^11.0.0",
     "prettier-eslint-cli": "^5.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-is": "^16.13.1",
+    "react-test-renderer": "^16.13.1",
     "rimraf": "^3.0.2",
     "rollup": "^2.16.1",
     "rollup-plugin-babel": "^4.4.0",
@@ -70,7 +78,15 @@
   },
   "lint-staged": {
     "*.js": [
-      "yarn lint"
+      "yarn lint",
+      "yarn test:stagged",
+      "git add"
     ]
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js"
+    }
   }
 }
