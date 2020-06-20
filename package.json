@@ -1,6 +1,6 @@
 {
   "name": "react-simple-elements",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Simple react ui components",
   "main": "dist/bundle.cjs.js",
   "module": "dist/bundle.esm.js",
@@ -25,15 +25,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/claeusdev/react-loaders.git"
+    "url": "git+https://github.com/claeusdev/react-simple-elements.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/claeusdev/react-loaders/issues"
+    "url": "https://github.com/claeusdev/react-simple-elements/issues"
   },
-  "homepage": "https://nanamanu.xyz/react-loaders/",
+  "homepage": "https://nanamanu.xyz/react-simple-elements/",
   "devDependencies": {
     "@babel/cli": "^7.10.1",
     "@babel/core": "^7.10.3",
