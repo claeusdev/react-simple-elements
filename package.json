@@ -1,5 +1,5 @@
 {
-  "name": "react-simple-loaders",
+  "name": "react-ui-elements",
   "version": "1.0.0",
   "description": "Simple React loading components",
   "main": "dist/bundle.cjs.js",
