@@ -1,7 +1,7 @@
 {
-  "name": "react-ui-elements",
-  "version": "1.0.0",
-  "description": "Simple React loading components",
+  "name": "react-simple-elements",
+  "version": "1.0.1",
+  "description": "Simple react ui components",
   "main": "dist/bundle.cjs.js",
   "module": "dist/bundle.esm.js",
   "sideEffects": false,
