@@ -15,7 +15,9 @@
     "prebuild": "rimraf dist",
     "build": "rollup -c ",
     "storybook": "start-storybook",
-    "storybook:build": "build-storybook -c .storybook -o .out"
+    "storybook:build": "build-storybook -c .storybook -o .out",
+    "prestorybook:deploy": "yarn storybook:build",
+    "storybook:deploy": "gh-pages -d .out"
   },
   "repository": {
     "type": "git",
@@ -90,5 +92,8 @@
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
       "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js"
     }
+  },
+  "dependencies": {
+    "gh-pages": "^3.0.0"
   }
 }
