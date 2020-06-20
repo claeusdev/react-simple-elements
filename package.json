@@ -1,10 +1,13 @@
 {
-  "name": "react-loaders",
+  "name": "react-simple-loaders",
   "version": "1.0.0",
   "description": "Simple React loading components",
   "main": "dist/bundle.cjs.js",
   "module": "dist/bundle.esm.js",
   "sideEffects": false,
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "lint": "eslint '**/*.js' --fix",
     "test": "jest",
@@ -17,7 +20,8 @@
     "storybook": "start-storybook",
     "storybook:build": "build-storybook -c .storybook -o .out",
     "prestorybook:deploy": "yarn storybook:build",
-    "storybook:deploy": "gh-pages -d .out"
+    "storybook:deploy": "gh-pages -d .out",
+    "prepublish": "yarn build"
   },
   "repository": {
     "type": "git",
