@@ -10011,6 +10011,7 @@ pug-attrs@^3.0.0:
     js-stringify "^1.0.2"
     pug-runtime "^3.0.0"
 
+
 pug-code-gen@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/pug-code-gen/-/pug-code-gen-3.0.2.tgz#ad190f4943133bf186b60b80de483100e132e2ce"
@@ -10073,6 +10074,7 @@ pug-parser@^6.0.0:
   dependencies:
     pug-error "^2.0.0"
     token-stream "1.0.0"
+
 
 pug-runtime@^3.0.0, pug-runtime@^3.0.1:
   version "3.0.1"
